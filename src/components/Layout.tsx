@@ -8,7 +8,7 @@ interface LayoutProps {
 
 const Layout = ({ children }: LayoutProps) => {
     return (
-        <div className="w-full mx-auto">
+        <div className="w-full ">
             <div className="bg-primary max-w-7xl h-36 flex items-center justify-between mx-44 rounded-lg">
             <Header />
             </div>
