@@ -4,7 +4,7 @@
 const kontakt = () => {
     return (
         <>
-            <div className="bg-amber-600 container ">
+            <div className=" container ">
                 <h1 className="text-4xl font-bold ">Kontakt</h1>
                 <p>Die 5 Helden</p>
                 <p>Schillstr. 9, 47119 Duisburg</p>
