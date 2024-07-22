@@ -34,11 +34,11 @@ const Home: NextPage = () => {
 
                 <h2 className="font-medium text-3xl text-center text-[#f26b1d] my-4">Herzlich Willkommen bei Die 5
                     Helden!</h2>
-                <p className="text-2xl text-center text-[#557118] my-6">
+                <p className="text-2xl text-center text-[#557118]  my-6">
                     Sie suchen eine liebevolle und professionelle Betreuung für Ihr Kind?
                     In der Kindertagespflege <strong>Die 5 Helden</strong> bieten wir Kinderbetreuung bis <strong>zum 3. Lebensjahr</strong>.
                 </p>
-                <p className="text-xl text-black my-6">
+                <p className="text-xl text-black  my-6">
                     In großzügigen, kindgerechten Räumen mitten in Duisburg Laar biete ich Montag bis Freitag Platz für
                     bis zu fünf Kinder bis zum 3. Lebensjahr. Durch die kleine Gruppengröße kann ich mich intensiv um
                     die Entwicklung Ihres Kindes kümmern und jedes Kind individuell und spielerisch fördern. Ich

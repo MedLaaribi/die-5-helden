@@ -36,7 +36,7 @@ const Carousel = ({ slides }: CarouselProps) => {
             >
                 {slides.map((s, index) => (
                     <div key={index} className="flex-shrink-0 w-full">
-                        <img className="w-full h-96 my-8 object-cover rounded-lg" src={s} alt={`slide ${index}`} />
+                        <img className="w-full h-96 my-8 object-cover rounded-lg shadow-lg" src={s} alt={`slide ${index}`} />
                     </div>
                 ))}
             </div>
