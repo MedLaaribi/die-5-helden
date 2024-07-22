@@ -2,7 +2,7 @@
 
 const Oeffnungszeiten = () => {
     return (
-        <div className="container mx-auto px-4 py-8">
+        <div className="px-10">
             <h1 className="font-bold text-3xl text-[#f26b1d]">Öffnungszeiten</h1>
             <div className="h-0.5 my-4 bg-gradient-to-r from-[#F26B1D] via-[#F2CF1D] to-[#F26B1D]"></div>
             <div className="flex justify-center">
@@ -14,8 +14,10 @@ const Oeffnungszeiten = () => {
                     Die 5 Helden
                 </h1>
             </div>
-            <img src="/images/Gesundheit und Ernährung.jpg" alt="Gesundheit und Ernährung"
-                 className="w-full h-80 my-10 object-cover rounded-lg"/>
+            <div className="flex-shrink-0 w-full">
+            <img src="/images/raume.jpg" alt="Gesundheit und Ernährung"
+                 className="w-full h-96 my-8 object-cover rounded-lg shadow-lg"/>
+            </div>
             <section className="my-8">
                 <h2 className="font-medium text-3xl text-[#f26b1d] my-4">Öffnungszeiten für jeden Tag</h2>
                 <p>

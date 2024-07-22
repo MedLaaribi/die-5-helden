@@ -1,8 +1,6 @@
-// src/pages/uebersicht.tsx
-
 const Uebersicht = () => {
     return (
-        <div>
+        <div className="px-10">
             <h1 className="font-bold text-3xl text-[#f26b1d]">Übersicht</h1>
             <div className="h-0.5 my-4 bg-gradient-to-r from-[#F26B1D] via-[#F2CF1D] to-[#F26B1D]"></div>
             <div className="flex justify-center">
@@ -14,39 +12,45 @@ const Uebersicht = () => {
                     Die 5 Helden
                 </h1>
             </div>
-            <img src="/images/cover-übersicht.jpg" alt="Cover Übersicht"
-                 className="w-full h-96 my-8 object-cover rounded-lg"/>
+            <div className="flex-shrink-0 w-full">
+                <img src="/images/cover-übersicht.jpg" alt="Cover Übersicht"
+                     className="w-full h-96 my-8 object-cover rounded-lg shadow-lg"/>
+            </div>
             <section className="">
                 <h2 className="font-medium text-3xl text-[#f26b1d] my-4">Übersicht</h2>
-                <p className="text-xl text-black my-6">
-                    Der geregelte Tagesablauf mit Frühstück,
-                    Morgenkreis, gemeinsamen Aktivitäten,
-                    Mittagessen, Mittagsschlaf, Snacks und
-                    anderen wiederkehrenden Ritualen bietet
-                    den Kindern Halt und Geborgenheit.
-                    Sie können dadurch schneller neue Situationen
-                    und Umgebungen erkennen und wahrnehmen
-                    und bewältigen, was neues Selbstvertrauen
-                    und Selbstwertgefühl schafft. Durch Spielen,
-                    Singen, Basteln, Toben, Tanzen, Spazierengehen
-                    und andere attraktive Aktivitäten werden Sinne
-                    und Motorik der (Klein-)Kinder gefördert.
-                    Die Wünsche der Kinder werden selbstverständlich
-                    berücksichtigt.
-                </p>
-                <img src="/images/logo.jpg" alt="Räume und Umgebung"
-                     className="w-56 h-42 my-8 object-cover rounded-lg"/>
+                <div className="flex flex-wrap items-start my-6">
+                    <p className="text-xl text-black flex-1 mr-4">
+                        Der geregelte Tagesablauf mit Frühstück,
+                        Morgenkreis, gemeinsamen Aktivitäten,
+                        Mittagessen, Mittagsschlaf, Snacks und
+                        anderen wiederkehrenden Ritualen bietet
+                        den Kindern Halt und Geborgenheit.
+                        Sie können dadurch schneller neue Situationen
+                        und Umgebungen erkennen und wahrnehmen
+                        und bewältigen, was neues Selbstvertrauen
+                        und Selbstwertgefühl schafft. Durch Spielen,
+                        Singen, Basteln, Toben, Tanzen, Spazierengehen
+                        und andere attraktive Aktivitäten werden Sinne
+                        und Motorik der (Klein-)Kinder gefördert.
+                        Die Wünsche der Kinder werden selbstverständlich
+                        berücksichtigt.
+                    </p>
+                    <img src="/images/logo.jpg" alt="Übersicht"
+                         className="w-56 h-42 object-cover rounded-lg shadow-lg border-2"/>
+                </div>
             </section>
             <section className="">
                 <h2 className="font-medium text-3xl text-[#f26b1d] my-4">Räume und Umgebung</h2>
-                <p className="text-xl text-black my-6">
-                    Unsere Räumlichkeiten sind großzügig und kindgerecht gestaltet. Klare und verständliche
-                    Strukturen und Rituale bieten Ihrem Kind eine wohltuende Sicherheit und stärken das
-                    Selbstvertrauen. Die Zeit an der frischen Luft kommt bei uns nicht zu kurz. Wir entdecken
-                    bei Wind und Wetter die zahlreichen Spielplätze in der Nähe oder machen Ausflüge.
-                </p>
-                <img src="/images/logo.jpg" alt="Räume und Umgebung"
-                     className="w-56 h-42 my-8 object-cover rounded-lg"/>
+                <div className="flex flex-wrap items-start my-6">
+                    <p className="text-xl text-black flex-1 mr-4">
+                        Unsere Räumlichkeiten sind großzügig und kindgerecht gestaltet. Klare und verständliche
+                        Strukturen und Rituale bieten Ihrem Kind eine wohltuende Sicherheit und stärken das
+                        Selbstvertrauen. Die Zeit an der frischen Luft kommt bei uns nicht zu kurz. Wir entdecken
+                        bei Wind und Wetter die zahlreichen Spielplätze in der Nähe oder machen Ausflüge.
+                    </p>
+                    <img src="/images/raume.jpg" alt="Räume und Umgebung"
+                         className="w-56 h-42 object-cover rounded-lg shadow-lg"/>
+                </div>
             </section>
             <section className="">
                 <h2 className="font-medium text-3xl text-[#f26b1d] my-4">Gesundheit und Ernährung</h2>
@@ -58,8 +62,8 @@ const Uebersicht = () => {
                     Trinken ist sehr wichtig und wird natürlich auch nicht vergessen. Wasser steht immer zur
                     Verfügung.
                 </p>
-                <img src="/images/Gesundheit und Ernährung.jpg" alt="Gesundheit und Ernährung"
-                     className="w-56 h-42 my-8 object-cover rounded-lg"/>
+                <img src="/images/gesundheit.jpg" alt="Gesundheit und Ernährung"
+                     className="w-full h-full object-cover rounded-lg shadow-lg"/>
             </section>
         </div>
     );
