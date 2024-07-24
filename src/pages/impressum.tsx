@@ -15,6 +15,11 @@ const Impressum: NextPage = () => {
                     Die 5 Helden
                 </h1>
             </div>
+
+            <div className="flex-shrink-0 w-full mt-20 ">
+                <img src="/images/imprint.jpg" alt="imprint"
+                     className="w-full h-96  object-cover rounded-lg shadow-lg"/>
+            </div>
         </div>
     );
 };
