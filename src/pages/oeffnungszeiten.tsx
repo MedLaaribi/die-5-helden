@@ -14,20 +14,24 @@ const Oeffnungszeiten = () => {
                     Die 5 Helden
                 </h1>
             </div>
-            <div className="flex-shrink-0 w-full mt-20">
-            <img src="/images/raume.jpg" alt="Gesundheit und Ernährung"
-                 className="w-full h-96  object-cover rounded-lg shadow-lg"/>
-            </div>
+
             <section className="mt-20">
-                <h2 className="font-medium text-3xl text-[#f26b1d] my-4">Öffnungszeiten für jeden Tag</h2>
-                <p>
-                    Montag: 07:00 - 16:00 Uhr<br/>
-                    Dienstag: 07:00 - 16:00 Uhr<br/>
-                    Mittwoch: 07:00 - 15:00 Uhr<br/>
-                    Donnerstag: 07:00 - 16:00 Uhr<br/>
-                    Freitag: 07:00 - 16:00 Uhr<br/>
-                    und nach Vereinbarung
-                </p>
+                <div className="relative flex justify-center">
+                    <img src="/images/Oeffnungszeiten2.jpg" alt="Öffnungszeiten" className="rounded-lg shadow-lg w-full h-full object-cover mt-20" />
+                    <div className="absolute top-40 w-full h-full flex items-start justify-center pt-8">
+                        <div className="text-3xl  text-[#333] bg-white bg-opacity-75 p-4">
+                            <h2 className="font-medium text-5xl text-[#0774C3] flex  justify-center">Öffnungszeiten</h2>
+                            <div className="mt-12">
+                                <p><span className="inline-block w-44 py-6">Montag:</span><span>| 07:00 - 16:00 Uhr</span></p>
+                                <p><span className="inline-block w-44 py-6">Dienstag:</span><span>| 07:00 - 16:00 Uhr</span></p>
+                                <p><span className="inline-block w-44 py-6">Mittwoch:</span><span>| 07:00 - 15:00 Uhr</span></p>
+                                <p><span className="inline-block w-44 py-6">Donnerstag:</span><span>| 07:00 - 16:00 Uhr</span></p>
+                                <p><span className="inline-block w-44 py-6">Freitag:</span><span>| 07:00 - 16:00 Uhr</span></p>
+                                <span className=" w-44 pl-10"> und nach Vereinbarung </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
         </div>
     );
