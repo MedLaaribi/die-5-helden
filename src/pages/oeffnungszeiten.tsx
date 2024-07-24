@@ -14,11 +14,11 @@ const Oeffnungszeiten = () => {
                     Die 5 Helden
                 </h1>
             </div>
-            <div className="flex-shrink-0 w-full">
+            <div className="flex-shrink-0 w-full mt-20">
             <img src="/images/raume.jpg" alt="Gesundheit und Ernährung"
-                 className="w-full h-96 my-8 object-cover rounded-lg shadow-lg"/>
+                 className="w-full h-96  object-cover rounded-lg shadow-lg"/>
             </div>
-            <section className="my-8">
+            <section className="mt-20">
                 <h2 className="font-medium text-3xl text-[#f26b1d] my-4">Öffnungszeiten für jeden Tag</h2>
                 <p>
                     Montag: 07:00 - 16:00 Uhr<br/>

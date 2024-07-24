@@ -16,14 +16,16 @@ const kontakt = () => {
                         Die 5 Helden
                     </h1>
                 </div>
-                <div className="flex-shrink-0 w-full">
+                <div className="flex-shrink-0 w-full mt-20">
                     <img src="/images/raume.jpg" alt="Gesundheit und Ernährung"
-                         className="w-full h-96 my-8 object-cover rounded-lg shadow-lg"/>
+                         className="w-full h-96  object-cover rounded-lg shadow-lg"/>
                 </div>
+                <div className="mt-20">
                 <p>Die 5 Helden</p>
                 <p>Schillstr. 9, 47119 Duisburg</p>
                 <p>Telefon: +49 178 7303452</p>
                 <p>Email: exemple@gmail.com</p>
+                </div>
             </div>
 
         </>

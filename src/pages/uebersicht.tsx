@@ -12,12 +12,12 @@ const Uebersicht = () => {
                     Die 5 Helden
                 </h1>
             </div>
-            <div className="flex-shrink-0 w-full">
+            <div className="flex-shrink-0 w-full mt-20 ">
                 <img src="/images/cover-übersicht.jpg" alt="Cover Übersicht"
-                     className="w-full h-96 my-8 object-cover rounded-lg shadow-lg"/>
+                     className="w-full h-96  object-cover rounded-lg shadow-lg"/>
             </div>
-            <section className="">
-                <h2 className="font-medium text-3xl text-[#f26b1d] my-4">Übersicht</h2>
+            <section className="mt-20">
+                <h2 className="font-medium text-3xl text-[#f26b1d] ">Übersicht</h2>
                 <div className="flex flex-wrap items-start my-6">
                     <p className="text-xl text-black flex-1 mr-4">
                         Der geregelte Tagesablauf mit Frühstück,
@@ -39,8 +39,8 @@ const Uebersicht = () => {
                          className="w-56 h-42 object-cover rounded-lg shadow-lg border-2"/>
                 </div>
             </section>
-            <section className="">
-                <h2 className="font-medium text-3xl text-[#f26b1d] my-4">Räume und Umgebung</h2>
+            <section id="raeume" className="mt-20">
+                <h2 className="font-medium text-3xl text-[#f26b1d] ">Räume und Umgebung</h2>
                 <div className="flex flex-wrap items-start my-6">
                     <p className="text-xl text-black flex-1 mr-4">
                         Unsere Räumlichkeiten sind großzügig und kindgerecht gestaltet. Klare und verständliche
@@ -52,8 +52,8 @@ const Uebersicht = () => {
                          className="w-56 h-42 object-cover rounded-lg shadow-lg"/>
                 </div>
             </section>
-            <section className="">
-                <h2 className="font-medium text-3xl text-[#f26b1d] my-4">Gesundheit und Ernährung</h2>
+            <section id="gesundheit" className="mt-20">
+                <h2 className="font-medium text-3xl text-[#f26b1d] ">Gesundheit und Ernährung</h2>
                 <p className="text-xl text-black my-6">
                     Die richtige Ernährung ist ein Grundstein, um gesund zu bleiben und sich fit zu fühlen.
                     Ich achte sehr darauf, dass ich für die Kinder abwechslungsreiche und gesunde Mahlzeiten
@@ -63,7 +63,7 @@ const Uebersicht = () => {
                     Verfügung.
                 </p>
                 <img src="/images/gesundheit.jpg" alt="Gesundheit und Ernährung"
-                     className="w-full h-full object-cover rounded-lg shadow-lg"/>
+                     className="w-full h-full object-cover rounded-lg shadow-lg mt-10"/>
             </section>
         </div>
     );

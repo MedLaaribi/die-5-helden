@@ -1,49 +1,53 @@
-const Uebersicht = () => {
+import type { NextPage } from 'next';
+import Head from 'next/head';
+import Carousel from '../components/Carousel';
+
+const Home: NextPage = () => {
+    const slides = [
+        "/images/hero1.jpg",
+        "/images/hero2.jpg",
+        "/images/hero3.jpg",
+    ];
+
     return (
-        <div className="px-10">
-            <h1 className="font-bold text-3xl text-[#f26b1d]">Übersicht</h1>
-            <div className="h-0.5 my-4 bg-gradient-to-r from-[#F26B1D] via-[#F2CF1D] to-[#F26B1D]"></div>
-            <div className="flex justify-center">
-                <h1 className="text-5xl font-bold bg-clip-text text-transparent" style={{
-                    backgroundImage: 'linear-gradient(to right, #50D4F2 0%, #F2CF1D 25%, #F26B1D 50%, #F2911B 75%, #30D979 100%)',
-                    WebkitBackgroundClip: 'text',
-                    WebkitTextFillColor: 'transparent',
-                }}>
-                    Die 5 Helden
-                </h1>
-            </div>
-            <div className="flex-shrink-0 w-full">
-                <img src="/images/cover-übersicht.jpg" alt="Cover Übersicht"
-                     className="w-full h-96 my-8 object-cover rounded-lg shadow-lg"/>
-            </div>
-            <section id="raeume" className="">
-                <h2 className="font-medium text-3xl text-[#f26b1d] my-4">Räume und Umgebung</h2>
-                <div className="flex flex-wrap items-start my-6">
-                    <p className="text-xl text-black flex-1 mr-4">
-                        Unsere Räumlichkeiten sind großzügig und kindgerecht gestaltet. Klare und verständliche
-                        Strukturen und Rituale bieten Ihrem Kind eine wohltuende Sicherheit und stärken das
-                        Selbstvertrauen. Die Zeit an der frischen Luft kommt bei uns nicht zu kurz. Wir entdecken
-                        bei Wind und Wetter die zahlreichen Spielplätze in der Nähe oder machen Ausflüge.
-                    </p>
-                    <img src="/images/raume.jpg" alt="Räume und Umgebung"
-                         className="w-56 h-42 object-cover rounded-lg shadow-lg"/>
+        <div>
+            <Head>
+                <title>Die 5 Helden</title>
+                <meta name="description" content="Willkommen bei Die 5 Helden, Ihrer liebevollen und professionellen Kinderbetreuung." />
+                <link rel="icon" href="/assets/favicon" />
+            </Head>
+            <div className="px-10">
+                <h1 className="font-bold text-3xl text-[#f26b1d]">Willkommen</h1>
+                {/* Gradient Line */}
+                <div className="h-0.5 my-4 bg-gradient-to-r from-[#F26B1D] via-[#F2CF1D] to-[#F26B1D]"></div>
+                {/* Gradient Text */}
+                <div className="flex justify-center">
+                    <h1 className="text-5xl font-bold bg-clip-text text-transparent" style={{
+                        backgroundImage: 'linear-gradient(to right, #50D4F2 0%, #F2CF1D 25%, #F26B1D 50%, #F2911B 75%, #30D979 100%)',
+                        WebkitBackgroundClip: 'text',
+                        WebkitTextFillColor: 'transparent',
+                    }}>
+                        Die 5 Helden
+                    </h1>
                 </div>
-            </section>
-            <section id="gesundheit" className="">
-                <h2 className="font-medium text-3xl text-[#f26b1d] my-4">Gesundheit und Ernährung</h2>
-                <p className="text-xl text-black my-6">
-                    Die richtige Ernährung ist ein Grundstein, um gesund zu bleiben und sich fit zu fühlen.
-                    Ich achte sehr darauf, dass ich für die Kinder abwechslungsreiche und gesunde Mahlzeiten
-                    zubereite. Die Qualität und Herkunft der Lebensmittel spielt für mich eine große Rolle.
-                    Der wöchentliche Speiseplan wird an der Tafel im Eingangsbereich ausgeschrieben.
-                    Trinken ist sehr wichtig und wird natürlich auch nicht vergessen. Wasser steht immer zur
-                    Verfügung.
+                <div className="mt-20">
+                <Carousel slides={slides} />
+                </div>
+                <p className=" mt-20 text-2xl text-center text-[#557118]">
+                    Sie suchen eine liebevolle und professionelle Betreuung für Ihr Kind?
+                    In der Kindertagespflege Die 5 Helden bieten wir Kinderbetreuung bis zum 3. Lebensjahr.
                 </p>
-                <img src="/images/gesundheit.jpg" alt="Gesundheit und Ernährung"
-                     className="w-full h-96 object-cover rounded-lg shadow-lg"/>
-            </section>
+                <h2 className="font-medium text-3xl text-center text-[#f26b1d] my-8">Herzlich Willkommen bei Die 5 Helden!</h2>
+                <p className="text-xl text-black">
+                    In großzügigen, kindgerechten Räumen mitten in Duisburg Laar biete ich Montag bis Freitag Platz für bis zu fünf Kinder bis zum 3. Lebensjahr. Durch die kleine Gruppengröße kann ich mich intensiv um die Entwicklung Ihres Kindes kümmern und jedes Kind individuell und spielerisch fördern. Ich unterstütze Ihre Kinder dabei, Probleme selbständig zu meistern und Selbstvertrauen zu entwickeln. Dies alles geschieht in einem liebevollen, wertschätzenden Umgang miteinander, der durch Humor und Fröhlichkeit geprägt ist.
+                </p>
+                <h3 className="font-medium text-3xl text-[#f26b1d] my-8">Unsere Philosophie</h3>
+                <p className="text-xl text-black">
+                    Wichtig sind mir klare und verständliche Strukturen und Rituale. Sie bieten Ihrem Kind eine wohlfühlende Sicherheit und Stärke, sich selbst zu vertrauen. Die Zeit an der frischen Luft kommt bei uns nicht zu kurz. Wir entdecken bei Wind und Wetter die zahlreichen Spielplätze in der Nähe oder machen Ausflüge.
+                </p>
+            </div>
         </div>
     );
 };
 
-export default Uebersicht;
+export default Home;
