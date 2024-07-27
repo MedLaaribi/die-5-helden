@@ -31,7 +31,7 @@ const Kontakt: React.FC = () => {
                     <p className="font-bold text-2xl">Die 5 Helden</p>
                     <p className="font-medium text-xl my-4">Schillstr. 9, 47119 Duisburg</p>
                     <p className="font-medium text-xl mt-10">Telefon: +49 178 7303452</p>
-                    <p className="font-medium text-xl">Email: exemple@gmail.com</p>
+                    <p className="font-medium text-xl">Email: Diefünfhelden@web.de</p>
                 </div>
                 <div className="flex justify-center items-center mt-20 ">
                     <iframe
