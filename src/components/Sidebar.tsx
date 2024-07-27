@@ -11,7 +11,7 @@ const Sidebar = () => {
     };
 
     // Funktion für sanftes Scrollen
-    const handleScroll = (event: React.MouseEvent<HTMLAnchorElement, MouseEvent>, targetId: string) => {
+    const handleScroll = (event: React.MouseEvent<HTMLLIElement, MouseEvent>, targetId: string) => {
         event.preventDefault();
         const targetElement = document.getElementById(targetId);
         if (targetElement) {
@@ -22,59 +22,53 @@ const Sidebar = () => {
         }
     };
 
+    const navigateTo = (url: string) => {
+        router.push(url);
+    };
+
     return (
-        <nav className="bg-secondary w-60 bottom-0 left-44 z-10 p-4 space-y-4 rounded-lg shadow-lg">
+        <nav className="bg-secondary w-60 bottom-0 left-44 z-10 p-4 space-y-4 rounded-lg shadow-lg cursor-pointer">
             <ul>
-                <li>
-                    <Link href="/" passHref>
-                        <span className={`block py-2 px-4 rounded text-white ${router.pathname === '/' ? 'bg-gradient-to-r from-[#0029FF] to-[#1B2BBA]' : 'hover:bg-gradient-to-r hover:from-[#0029FF] hover:to-[#1B2BBA]'}`}>
-                            Willkommen
-                        </span>
-                    </Link>
+                <li onClick={() => navigateTo('/')}>
+                    <span className={`block py-2 px-4 rounded text-white ${router.pathname === '/' ? 'bg-gradient-to-r from-[#557118] to-[#50D4F2]' : 'hover:bg-gradient-to-r hover:from-[#557118] hover:to-[#50D4F2]'}`}>
+                        Willkommen
+                    </span>
                 </li>
                 <li>
-                    <div className="relative">
-                        <Link href="/uebersicht" passHref>
-                            <span className={`block w-full text-left py-2 px-4 rounded text-white ${router.pathname.startsWith('/uebersicht') ? 'bg-gradient-to-r from-[#0029FF] to-[#1B2BBA]' : 'hover:bg-gradient-to-r hover:from-[#0029FF] hover:to-[#1B2BBA]'}`}>
-                                Übersicht
-                            </span>
-                        </Link>
+                    <div className="relative" onClick={handleOverviewClick}>
+                        <span className={`block w-full text-left py-2 px-4 rounded text-white ${router.pathname.startsWith('/uebersicht') ? 'bg-gradient-to-r from-[#557118] to-[#50D4F2]' : 'hover:bg-gradient-to-r hover:from-[#557118] hover:to-[#50D4F2]'}`}>
+                            Übersicht
+                        </span>
                         {isOverviewOpen && (
                             <ul className="ml-4 mt-2 space-y-2">
-                                <li>
-                                    <a href="/uebersicht#raeume" onClick={(e) => handleScroll(e, 'raeume')} className="block py-2 px-2 rounded text-white hover:bg-gradient-to-r hover:from-[#0029FF] hover:to-[#1B2BBA]">
+                                <li onClick={(e) => handleScroll(e, 'raeume')}>
+                                    <span className="block py-2 px-2 rounded text-white hover:bg-gradient-to-r hover:from-[#557118] hover:to-[#50D4F2]">
                                         Räume und Umgebung
-                                    </a>
+                                    </span>
                                 </li>
-                                <li>
-                                    <a href="/uebersicht#gesundheit" onClick={(e) => handleScroll(e, 'gesundheit')} className="block py-2 px-2 rounded text-white hover:bg-gradient-to-r hover:from-[#0029FF] hover:to-[#1B2BBA]">
+                                <li onClick={(e) => handleScroll(e, 'gesundheit')}>
+                                    <span className="block py-2 px-2 rounded text-white hover:bg-gradient-to-r hover:from-[#557118] hover:to-[#50D4F2]">
                                         Gesundheit und Ernährung
-                                    </a>
+                                    </span>
                                 </li>
                             </ul>
                         )}
                     </div>
                 </li>
-                <li>
-                    <Link href="/oeffnungszeiten" passHref>
-                        <span className={`block py-2 px-4 rounded text-white ${router.pathname === '/oeffnungszeiten' ? 'bg-gradient-to-r from-[#0029FF] to-[#1B2BBA]' : 'hover:bg-gradient-to-r hover:from-[#0029FF] hover:to-[#1B2BBA]'}`}>
-                            Öffnungszeiten
-                        </span>
-                    </Link>
+                <li onClick={() => navigateTo('/oeffnungszeiten')}>
+                    <span className={`block py-2 px-4 rounded text-white ${router.pathname === '/oeffnungszeiten' ? 'bg-gradient-to-r from-[#557118] to-[#50D4F2]' : 'hover:bg-gradient-to-r hover:from-[#557118] hover:to-[#50D4F2]'}`}>
+                        Öffnungszeiten
+                    </span>
                 </li>
-                <li>
-                    <Link href="/kontakt" passHref>
-                        <span className={`block py-2 px-4 rounded text-white ${router.pathname === '/kontakt' ? 'bg-gradient-to-r from-[#0029FF] to-[#1B2BBA]' : 'hover:bg-gradient-to-r hover:from-[#0029FF] hover:to-[#1B2BBA]'}`}>
-                            Kontakt
-                        </span>
-                    </Link>
+                <li onClick={() => navigateTo('/kontakt')}>
+                    <span className={`block py-2 px-4 rounded text-white ${router.pathname === '/kontakt' ? 'bg-gradient-to-r from-[#557118] to-[#50D4F2]' : 'hover:bg-gradient-to-r hover:from-[#557118] hover:to-[#50D4F2]'}`}>
+                        Kontakt
+                    </span>
                 </li>
-                <li>
-                    <Link href="/impressum" passHref>
-                        <span className={`block py-2 px-4 rounded text-white ${router.pathname === '/impressum' ? 'bg-gradient-to-r from-[#0029FF] to-[#1B2BBA]' : 'hover:bg-gradient-to-r hover:from-[#0029FF] hover:to-[#1B2BBA]'}`}>
-                            Impressum
-                        </span>
-                    </Link>
+                <li onClick={() => navigateTo('/impressum')}>
+                    <span className={`block py-2 px-4 rounded text-white ${router.pathname === '/impressum' ? 'bg-gradient-to-r from-[#557118] to-[#50D4F2]' : 'hover:bg-gradient-to-r hover:from-[#557118] hover:to-[#50D4F2]'}`}>
+                        Impressum
+                    </span>
                 </li>
             </ul>
         </nav>
