@@ -1,4 +1,3 @@
-// pages/uebersicht.tsx
 const Uebersicht = () => {
     return (
         <div className="px-10">
@@ -17,6 +16,29 @@ const Uebersicht = () => {
                 <img src="/images/cover-übersicht.jpg" alt="Cover Übersicht"
                      className="w-full h-96 object-cover rounded-lg shadow-lg"/>
             </div>
+            <section className="mt-20">
+                <h2 className="font-medium text-3xl text-[#f26b1d]">Übersicht</h2>
+                <div className="flex flex-wrap items-start my-6">
+                    <p className="text-xl text-black flex-1 mr-4">
+                        Der geregelte Tagesablauf mit Frühstück,
+                        Morgenkreis, gemeinsamen Aktivitäten,
+                        Mittagessen, Mittagsschlaf, Snacks und
+                        anderen wiederkehrenden Ritualen bietet
+                        den Kindern Halt und Geborgenheit.
+                        Sie können dadurch schneller neue Situationen
+                        und Umgebungen erkennen und wahrnehmen
+                        und bewältigen, was neues Selbstvertrauen
+                        und Selbstwertgefühl schafft. Durch Spielen,
+                        Singen, Basteln, Toben, Tanzen, Spazierengehen
+                        und andere attraktive Aktivitäten werden Sinne
+                        und Motorik der (Klein-)Kinder gefördert.
+                        Die Wünsche der Kinder werden selbstverständlich
+                        berücksichtigt.
+                    </p>
+                    <img src="/images/logo.jpg" alt="Übersicht"
+                         className="w-56 h-42 object-cover rounded-lg shadow-lg border-2"/>
+                </div>
+            </section>
             <section id="raeume" className="mt-20">
                 <h2 className="font-medium text-3xl text-[#f26b1d]">Räume und Umgebung</h2>
                 <div className="flex flex-wrap items-start my-6">
