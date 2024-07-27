@@ -1,6 +1,7 @@
 // src/components/Footer.tsx
 import { useRouter } from 'next/router';
 import { MouseEvent } from 'react';
+import { FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 const Footer = () => {
     const router = useRouter();
@@ -27,6 +28,14 @@ const Footer = () => {
         router.push('/kontakt');
     };
 
+    const openWhatsApp = () => {
+        window.location.href = `https://wa.me/491787303452`; // Internationale Telefonnummer ohne "+" und ohne führende "0"
+    };
+
+    const openInstagram = () => {
+        window.location.href = `https://www.instagram.com/die5helden?igsh=MWd5NWF3ZDVvMWh5dQ==`;
+    };
+
     return (
         <footer className="bg-primary w-full flex flex-col items-center justify-between p-4">
             <div className="w-full flex justify-around text-white">
@@ -42,11 +51,9 @@ const Footer = () => {
                 </div>
                 <div className="leading-10 mx-32">
                     <span className="font-normal text-2xl">Folge uns</span>
-                    <div className="flex space-x-2">
-                        <img src="/assets/images/icon1.png" alt="Icon" className="w-6 h-6 object-cover" />
-                        <img src="/assets/images/icon2.png" alt="Icon" className="w-6 h-6 object-cover" />
-                        <img src="/assets/images/icon3.png" alt="Icon" className="w-[26px] h-[26px] object-cover" />
-                        <img src="/assets/images/icon4.png" alt="Icon" className="w-6 h-6 object-cover" />
+                    <div className="flex space-x-2 justify-center">
+                        <FaInstagram className="w-7 h-7 cursor-pointer" onClick={openInstagram} />
+                        <FaWhatsapp className="w-7 h-7 cursor-pointer" onClick={openWhatsApp} />
                     </div>
                 </div>
                 <div className="flex items-center space-x-4 mt-4">
