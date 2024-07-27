@@ -1,3 +1,4 @@
+// components/Sidebar.tsx
 import { useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
@@ -10,8 +11,7 @@ const Sidebar = () => {
         setIsOverviewOpen(!isOverviewOpen);
     };
 
-    // Funktion für sanftes Scrollen
-    const handleScroll = (event: React.MouseEvent<HTMLLIElement, MouseEvent>, targetId: string) => {
+    const handleScroll = (event: React.MouseEvent<HTMLSpanElement, MouseEvent>, targetId: string) => {
         event.preventDefault();
         const targetElement = document.getElementById(targetId);
         if (targetElement) {
@@ -23,6 +23,7 @@ const Sidebar = () => {
     };
 
     const navigateTo = (url: string) => {
+        setIsOverviewOpen(false); // Schließe das Untermenü beim Wechsel zu einer anderen Hauptseite
         router.push(url);
     };
 
@@ -34,20 +35,26 @@ const Sidebar = () => {
                         Willkommen
                     </span>
                 </li>
-                <li>
-                    <div className="relative" onClick={handleOverviewClick}>
+                <li onClick={() => navigateTo('/uebersicht')}>
+                    <div className="relative">
                         <span className={`block w-full text-left py-2 px-4 rounded text-white ${router.pathname.startsWith('/uebersicht') ? 'bg-gradient-to-r from-[#557118] to-[#50D4F2]' : 'hover:bg-gradient-to-r hover:from-[#557118] hover:to-[#50D4F2]'}`}>
                             Übersicht
                         </span>
                         {isOverviewOpen && (
                             <ul className="ml-4 mt-2 space-y-2">
-                                <li onClick={(e) => handleScroll(e, 'raeume')}>
-                                    <span className="block py-2 px-2 rounded text-white hover:bg-gradient-to-r hover:from-[#557118] hover:to-[#50D4F2]">
+                                <li>
+                                    <span
+                                        className="block py-2 px-2 rounded text-white hover:bg-gradient-to-r hover:from-[#557118] hover:to-[#50D4F2]"
+                                        onClick={(e) => handleScroll(e, 'raeume')}
+                                    >
                                         Räume und Umgebung
                                     </span>
                                 </li>
-                                <li onClick={(e) => handleScroll(e, 'gesundheit')}>
-                                    <span className="block py-2 px-2 rounded text-white hover:bg-gradient-to-r hover:from-[#557118] hover:to-[#50D4F2]">
+                                <li>
+                                    <span
+                                        className="block py-2 px-2 rounded text-white hover:bg-gradient-to-r hover:from-[#557118] hover:to-[#50D4F2]"
+                                        onClick={(e) => handleScroll(e, 'gesundheit')}
+                                    >
                                         Gesundheit und Ernährung
                                     </span>
                                 </li>
