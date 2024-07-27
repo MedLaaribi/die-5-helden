@@ -1,16 +1,16 @@
-// components/Sidebar.tsx
 import { useState } from 'react';
-import Link from 'next/link';
 import { useRouter } from 'next/router';
 
 const Sidebar = () => {
     const [isOverviewOpen, setIsOverviewOpen] = useState(false);
     const router = useRouter();
 
-    const handleOverviewClick = () => {
-        setIsOverviewOpen(!isOverviewOpen);
-    };
+    // Entfernt, da keine Verwendung
+    // const handleOverviewClick = () => {
+    //     setIsOverviewOpen(!isOverviewOpen);
+    // };
 
+    // Funktion für sanftes Scrollen
     const handleScroll = (event: React.MouseEvent<HTMLSpanElement, MouseEvent>, targetId: string) => {
         event.preventDefault();
         const targetElement = document.getElementById(targetId);
@@ -22,9 +22,9 @@ const Sidebar = () => {
         }
     };
 
-    const navigateTo = (url: string) => {
+    const navigateTo = async (url: string) => {
         setIsOverviewOpen(false); // Schließe das Untermenü beim Wechsel zu einer anderen Hauptseite
-        router.push(url);
+        await router.push(url);
     };
 
     return (
