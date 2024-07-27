@@ -24,7 +24,7 @@ const Oeffnungszeiten = () => {
                             <div className="mt-12">
                                 <p><span className="inline-block w-44 py-6">Montag:</span><span>| 07:00 - 16:00 Uhr</span></p>
                                 <p><span className="inline-block w-44 py-6">Dienstag:</span><span>| 07:00 - 16:00 Uhr</span></p>
-                                <p><span className="inline-block w-44 py-6">Mittwoch:</span><span>| 07:00 - 15:00 Uhr</span></p>
+                                <p><span className="inline-block w-44 py-6">Mittwoch:</span><span>| 07:00 - 16:00 Uhr</span></p>
                                 <p><span className="inline-block w-44 py-6">Donnerstag:</span><span>| 07:00 - 16:00 Uhr</span></p>
                                 <p><span className="inline-block w-44 py-6">Freitag:</span><span>| 07:00 - 16:00 Uhr</span></p>
                                 <span className=" w-44 pl-10"> und nach Vereinbarung </span>
