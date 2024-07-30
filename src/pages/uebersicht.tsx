@@ -39,7 +39,7 @@ const Uebersicht = () => {
                          className="w-56 h-42 object-cover rounded-lg shadow-lg border-2"/>
                 </div>
             </section>
-            <section id="raeume" className="mt-20">
+            <section  className="mt-20">
                 <h2 className="font-medium text-3xl text-[#f26b1d]">Räume und Umgebung</h2>
                 <div className="flex flex-wrap items-start my-6">
                     <p className="text-xl text-black flex-1 mr-4">
@@ -52,7 +52,7 @@ const Uebersicht = () => {
                          className="w-56 h-42 object-cover rounded-lg shadow-lg"/>
                 </div>
             </section>
-            <section id="gesundheit" className="mt-20">
+            <section  className="mt-20">
                 <h2 className="font-medium text-3xl text-[#f26b1d]">Gesundheit und Ernährung</h2>
                 <p className="text-xl text-black my-6">
                     Die richtige Ernährung ist ein Grundstein, um gesund zu bleiben und sich fit zu fühlen.
