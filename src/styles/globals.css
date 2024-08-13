@@ -1,3 +1,29 @@
+/* src/styles/globals.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html, body {
+    @apply m-0 p-0 w-full h-full overflow-x-hidden;
+    -webkit-text-size-adjust: 100%; /* Für ältere Webkit-basierte Browser */
+    text-size-adjust: 100%; /* Für moderne Browser */
+}
+
+.gradient-text-large {
+    background-image: linear-gradient(to right, #50D4F2, #F2CF1D, #F26B1D, #F2911B, #30D979);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* Beispiel für eine Keyframes-Optimierung */
+@keyframes fade-in {
+    from {
+        transform: translateY(10px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
