@@ -1,17 +1,21 @@
-import Document, { Html, Head, Main, NextScript } from 'next/document'
+// src/pages/_document.tsx
+import Document, { Html, Head, Main, NextScript } from 'next/document';
 
 class MyDocument extends Document {
     render() {
         return (
-            <Html lang="de"> {/* Setze das lang-Attribut hier */}
-                <Head />
+            <Html lang="de">
+                <Head>
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                    <link rel="icon" href="/assets/favicon.ico" /> {/* Korrigierter Pfad zum Favicon */}
+                </Head>
                 <body>
                 <Main />
                 <NextScript />
                 </body>
             </Html>
-        )
+        );
     }
 }
 
-export default MyDocument
+export default MyDocument;
