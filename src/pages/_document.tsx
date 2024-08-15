@@ -1,4 +1,3 @@
-// src/pages/_document.tsx
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 
 class MyDocument extends Document {
@@ -6,8 +5,7 @@ class MyDocument extends Document {
         return (
             <Html lang="de">
                 <Head>
-                    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                    <link rel="icon" href="/assets/favicon.ico" /> {/* Korrigierter Pfad zum Favicon */}
+                    <link rel="icon" href="/assets/favicon.ico" />
                 </Head>
                 <body>
                 <Main />
