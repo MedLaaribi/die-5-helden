@@ -1,3 +1,4 @@
+// HamburgerIcon.tsx
 import { FaBars, FaTimes } from 'react-icons/fa';
 
 interface HamburgerIconProps {
@@ -5,7 +6,7 @@ interface HamburgerIconProps {
     toggleSidebar: () => void;
 }
 
-const HamburgerIcon: React.FC<HamburgerIconProps> = ({ isOpen, toggleSidebar }) => {
+const HamburgerIcon = ({ isOpen, toggleSidebar }: HamburgerIconProps) => {
     return (
         <div className="lg:hidden p-4">
             {isOpen ? (
