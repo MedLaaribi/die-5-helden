@@ -41,11 +41,11 @@ const Footer = () => {
                 <div className="text-center md:text-left mb-4 md:mb-0">
                     <span className="font-normal text-xl md:text-2xl">Navigation</span>
                     <ul className="text-sm leading-6 cursor-pointer flex flex-wrap justify-center md:block space-x-4 md:space-x-0">
-                        <li onClick={(e) => handleScroll(e, '/')}>Startseite</li>
-                        <li onClick={(e) => handleScroll(e, '/uebersicht')}>Übersicht</li>
-                        <li onClick={(e) => handleScroll(e, '/kontakt')}>Kontakt</li>
-                        <li onClick={(e) => handleScroll(e, '/impressum')}>Impressum</li>
-                        <li onClick={(e) => handleScroll(e, '/datenschutz')}>Datenschutz</li>
+                        <li onClick={(e) => handleScroll(e, '/')} className="cursor-pointer">Startseite</li>
+                        <li onClick={(e) => handleScroll(e, '/uebersicht')} className="cursor-pointer">Übersicht</li>
+                        <li onClick={(e) => handleScroll(e, '/kontakt')} className="cursor-pointer">Kontakt</li>
+                        <li onClick={(e) => handleScroll(e, '/impressum')} className="cursor-pointer">Impressum</li>
+                        <li onClick={(e) => handleScroll(e, '/datenschutz')} className="cursor-pointer">Datenschutz</li>
                     </ul>
                 </div>
                 <div className="text-center md:text-left mb-4 md:mb-0">
@@ -69,7 +69,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className="w-full flex justify-center pt-4 md:justify-end items-center pr-7 md:absolute md:bottom-0 md:left-1/2 md:transform md:-translate-x-1/2 lg:justify-center lg:bottom-0 lg:w-full">
+            <div className="w-full flex justify-center mt-4 md:justify-end items-center pr-7 md:absolute md:bottom-0 md:left-1/2 md:transform md:-translate-x-1/2 lg:justify-center lg:bottom-0 lg:w-full">
                 <span className="font-normal text-sm md:text-lg text-white">© 2024 Die 5 Helden</span>
             </div>
         </footer>
