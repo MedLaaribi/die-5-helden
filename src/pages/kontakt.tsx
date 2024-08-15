@@ -32,7 +32,7 @@ const Kontakt: NextPage = () => {
                     <p className="font-bold text-2xl md:text-3xl">Die 5 Helden</p>
                     <p className="font-medium text-xl md:text-2xl my-4">Schillstr. 9, 47119 Duisburg</p>
                     <p className="font-medium text-xl md:text-2xl mt-10">Telefon: +49 178 7303452</p>
-                    <p className="font-medium text-xl md:text-2xl">Email: Diefünfhelden@web.de</p>
+                    <p className="font-medium text-xl md:text-2xl">Email: Diefunfhelden@web.de</p>
                 </section>
                 <div className="flex justify-center items-center mt-10 md:mt-20 overflow-hidden">
                     <iframe
