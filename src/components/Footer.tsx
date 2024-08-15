@@ -28,7 +28,7 @@ const Footer = () => {
     };
 
     const openWhatsApp = () => {
-        window.location.href = `https://wa.me/491787303452`; // Internationale Telefonnummer ohne "+" und ohne führende "0"
+        window.location.href = `https://wa.me/491787303452`;
     };
 
     const openInstagram = () => {
@@ -36,7 +36,7 @@ const Footer = () => {
     };
 
     return (
-        <footer className="bg-primary w-full p-4 flex flex-col md:flex-row md:justify-between items-center">
+        <footer className="bg-primary w-full p-4 flex flex-col md:flex-row md:justify-between items-center relative">
             <div className="w-full md:flex md:justify-around text-white">
                 <div className="text-center md:text-left mb-4 md:mb-0">
                     <span className="font-normal text-xl md:text-2xl">Navigation</span>
@@ -69,8 +69,8 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className="text-center text-white mt-4 md:mt-0 md:absolute md:bottom-4 md:left-1/2 md:transform md:-translate-x-1/2">
-                <span className="font-normal text-sm md:text-lg">© 2024 Die 5 Helden</span>
+            <div className="w-full flex justify-center pt-4 md:justify-end items-center pr-7 md:absolute md:bottom-0 md:left-1/2 md:transform md:-translate-x-1/2 lg:justify-center lg:bottom-0 lg:w-full">
+                <span className="font-normal text-sm md:text-lg text-white">© 2024 Die 5 Helden</span>
             </div>
         </footer>
     );
