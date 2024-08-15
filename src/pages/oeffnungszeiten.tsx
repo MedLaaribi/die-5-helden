@@ -23,17 +23,35 @@ const Oeffnungszeiten: NextPage = () => {
                 </div>
                 <section className="flex-shrink-0 w-full mt-10 md:mt-20">
                     <div className="relative flex justify-center">
-                        <img src="/images/Oeffnungszeiten2.jpg" alt="Öffnungszeiten" className="rounded-lg shadow-lg w-full h-64 md:h-full object-cover" />
-                        <div className="absolute top-1/4 w-full h-full flex items-start justify-center pt-8">
-                            <div className="text-3xl text-[#333] bg-white bg-opacity-75 p-4">
-                                <h2 className="font-medium text-4xl md:text-5xl text-[#0774C3] flex justify-center">Öffnungszeiten</h2>
-                                <div className="mt-8 md:mt-12">
-                                    <p><span className="inline-block w-36 md:w-44 py-4">Montag:</span><span>| 07:00 - 16:00 Uhr</span></p>
-                                    <p><span className="inline-block w-36 md:w-44 py-4">Dienstag:</span><span>| 07:00 - 16:00 Uhr</span></p>
-                                    <p><span className="inline-block w-36 md:w-44 py-4">Mittwoch:</span><span>| 07:00 - 16:00 Uhr</span></p>
-                                    <p><span className="inline-block w-36 md:w-44 py-4">Donnerstag:</span><span>| 07:00 - 16:00 Uhr</span></p>
-                                    <p><span className="inline-block w-36 md:w-44 py-4">Freitag:</span><span>| 07:00 - 16:00 Uhr</span></p>
-                                    <span className="w-36 md:w-44 pl-10">und nach Vereinbarung</span>
+                        <img
+                            src="/images/Oeffnungszeiten2.jpg"
+                            alt="Öffnungszeiten"
+                            className="rounded-lg shadow-lg w-full h-full object-cover"
+                        />
+                        <div className="absolute top-4 md:top-12 lg:top-16 w-full h-full flex items-start justify-center">
+                            <div className="text-3xl text-[#333] bg-opacity-75 p-3">
+                                <h2 className="font-medium text-lg md:text-3xl lg:text-4xl text-[#0774C3] flex justify-center">
+                                    Öffnungszeiten
+                                </h2>
+                                <div className="ml-8 md:ml-8 lg:ml-16 mt-2 md:mt-6 lg:mt-10 ">
+                                    <p className="font-medium text-sm md:text-2xl lg:text-3xl pb-2.5 md:pb-6 lg:pb-8">
+                                        <span>Montag:</span><span>| 07:00 - 16:00 Uhr</span>
+                                    </p>
+                                    <p className="font-medium text-sm md:text-2xl lg:text-3xl pb-2.5 md:pb-6 lg:pb-8">
+                                        <span>Dienstag:</span><span>| 07:00 - 16:00 Uhr</span>
+                                    </p>
+                                    <p className="font-medium text-sm md:text-2xl lg:text-3xl pb-2.5 md:pb-6 lg:pb-8">
+                                        <span>Mittwoch:</span><span>| 07:00 - 16:00 Uhr</span>
+                                    </p>
+                                    <p className="font-medium text-sm md:text-2xl lg:text-3xl pb-2.5 md:pb-6 lg:pb-8">
+                                        <span>Donnerstag:</span><span>| 07:00 - 16:00 Uhr</span>
+                                    </p>
+                                    <p className="font-medium text-sm md:text-2xl lg:text-3xl pb-2.5 md:pb-6 lg:pb-8">
+                                        <span>Freitag:</span><span>| 07:00 - 16:00 Uhr</span>
+                                    </p>
+                                    <p className="font-medium text-sm md:text-2xl lg:text-3xl pb-2.5 md:pb-6 lg:pb-8">
+                                       <span> und nach Vereinbarung </span>
+                                    </p>
                                 </div>
                             </div>
                         </div>
